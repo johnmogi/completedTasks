@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Task Board Maker</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
   <link rel="icon"
     href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/225/memo_1f4dd.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -14,21 +17,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./custom.css">
-  <script src="https://kit.fontawesome.com/e5105e6c4a.js" crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.js"></script>
-  <script src="elements.js"></script>
-  <script src="validate.js"></script>
-  <script src="task_application.js"></script>
 
 </head>
 
@@ -93,23 +82,23 @@
 
                     <div class="col">
                       <label for="validationCustom03"><i class="far fa-clock"></i> Task Due Time</label>
-                      <div class="bootstrap-timepicker">                          
+                      <div class="bootstrap-timepicker">
 
                         <input id="timepicker5" type="text" class="form-control" value="current"
                           data-provide="timepicker" data-defaultTime="current" placeholder="current">
-                        </div>
+                      </div>
 
-                        <div class="invalid-feedback">
-                          Please provide a valid time.
+                      <div class="invalid-feedback">
+                        Please provide a valid time.
                       </div>
                       <!-- in order to improve user interface have included this bit of jquery for auto time correction on input-->
-                      <script type="text/javascript">
+                      <!-- <script type="text/javascript">
                         $('#timepicker5').timepicker({
                           template: false,
                           showInputs: false,
                           minuteStep: 5
                         });
-                      </script>
+                      </script> -->
 
 
                     </div>
@@ -151,10 +140,21 @@
     </div><!-- container-->
   </div>
   <!--container-->
-  <footer>
+ 
+    <script src="elements.js"></script>
+    <script src="validate.js"></script>
+    <script src="task_application.js"></script>
+    <script src="https://kit.fontawesome.com/e5105e6c4a.js" crossorigin="anonymous"></script>
 
 
-  </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+      </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.js"></script>
+ 
 </body>
 
 </html>
