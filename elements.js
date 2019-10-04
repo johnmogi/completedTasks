@@ -68,5 +68,11 @@ function generate() {
 		div4.className = 'date-body';
 		div4.innerHTML = '<i class="far fa-calendar"></i>';
 		div4.append(returnedArray[i].Date);
+
+		const div5 = document.createElement('div');
+		div.append(div5);
+		div5.className = 'date-body';
+		div5.innerHTML = '<i class="far fa-clock"></i>';
+		div5.append(returnedArray[i].Time);
 	}
 }
