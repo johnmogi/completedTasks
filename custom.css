@@ -8,7 +8,7 @@ body {
   font-size: 25px;
 }
 
-.jumbotron {
+  .jumbotron {
   padding: 1em;
   padding-right: 1em;
   padding-left: 1em;
@@ -27,10 +27,7 @@ body {
   margin-left: auto;
 }
 
-.container {
-}
-
-#stage .card {
+    #stage .card {
   overflow: auto;
   /* max-width: 18rem; */
   min-height: 300px;
