@@ -12,10 +12,10 @@ function buildTask() {
 	if (checkValid === false) {
 		return;
 	}
-	for (let i = -1; i < returnedArray.length; i++) {
+	for (let t = -1; t < returnedArray.length; t++) {
 		TASK_DOM = {
 			// id: parseInt(Math.floor(100 + Math.random() * 900) + i),
-			id: i + 10,
+			id: t,
 			Name: document.getElementById('taskName').value,
 			Date: document.getElementById('dueDate').value,
 			Detail: document.getElementById('taskDetail').value,
@@ -29,19 +29,6 @@ function buildTask() {
 		// localStorage.setItem(JSON.stringify(taskArray));
 		localStorage.setItem(JSON.stringify(returnedArray[i].id), JSON.stringify(returnedArray[i]));
 	}
-}
-
-function draw() {
-	validate();
-	if (checkValid === false) {
-		returnedArray.length = 0;
-		// form.preventDefault();
-		// creator.stopPropagation();
-		return;
-	}
-	// timeValid()
-	buildTask();
-	generate();
 }
 
 function redraw() {
@@ -58,5 +45,18 @@ function redraw() {
 		// if (item == "") {return}
 		returnedArray.push(item);
 	}
+	generate();
+}
+
+function draw() {
+	validate();
+	if (checkValid === false) {
+		returnedArray.length = 0;
+		// creator.preventDefault();
+		// creator.stopPropagation();
+		return;
+	}
+	// timeValid()
+	buildTask();
 	generate();
 }
