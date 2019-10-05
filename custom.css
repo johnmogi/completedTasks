@@ -112,3 +112,31 @@ body {
 .far {
 	margin-right: 5px;
 }
+.Complete {
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+	-webkit-appearance: none;
+	float: right;
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: .5;
+	width: 80px;
+	position: absolute;
+	right: 53px;
+	top: 49px;
+}
+button:focus {
+	outline: initial;
+}
+.fas.fa-clipboard-check {
+	color: #28a745;
+	width: 0;
+	margin-right: 10px;
+}
+button.close {
+	z-index: 5;
+}

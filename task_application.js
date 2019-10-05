@@ -8,6 +8,10 @@ function deleteTask(id) {
 	//   deleteCard();
 }
 
+function completeTask(id) {
+	const compBut = document.getElementById('note' + id);
+	compBut.style.opacity = '0.5';
+}
 function buildTask() {
 	if (checkValid === false) {
 		return;
