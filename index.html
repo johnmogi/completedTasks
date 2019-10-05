@@ -16,10 +16,10 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./custom.css">
-  <script src="elements.js"></script>
-  <script src="validate.js"></script>
-  <script src="task_application.js"></script>
+  <link rel="stylesheet" href="./build/custom.css">
+  <script src="./build/elements.js"></script>
+  <script src="./build/validate.js"></script>
+  <script src="./build/task_application.js"></script>
   <script src="https://kit.fontawesome.com/e5105e6c4a.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"> 
@@ -40,14 +40,14 @@
         <div class="jumbotron card border-info bg-light mb-3">
           <h1 class="display-3">📝 MyTask organiser </h1>
         </div>
-        <div class="card border-info bg-light mb-3">
+        <!-- <div class="card border-info bg-light mb-3">
           <div class="card-header">Arrange tasks: </div>
           <div class="card-body">
             <button type="button" id="all" class="btn btn-outline-primary">All</button>
             <button type="button" id="completed" class="btn btn-outline-success">completed</button>
             <button type="button" id="incomplete" class="btn btn-outline-danger">Incomplete</button>
           </div>
-        </div>
+        </div> -->
 
       </div>
       <div class="col-sm-8">
@@ -94,7 +94,7 @@
                          <div class="space"></div>
                     </div>
 
-                    <div class="col">
+                    <div class="col-4">
                       <label for="validationCustom03"><i class="far fa-clock"></i> Task Due Time</label>
                       <div class="bootstrap-timepicker">
 
@@ -116,11 +116,11 @@
 
 
                     </div>
-                    <div class="col">
+                    <div class="col-8">
                       <label for="validationCustom04">Task Details</label>
                       <textarea class="form-control" id="taskDetail" rows="3" required></textarea>
                       <div class="invalid-feedback">
-                        You'll need to provide some details regarding the task at hand
+                        Provide information regarding the task at hand.
                       </div>
                       <div class="valid-feedback">
                         Awesome info!

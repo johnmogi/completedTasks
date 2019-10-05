@@ -33,14 +33,14 @@ function checkTimeForValid() {
 	var myDate = dueDate.value;
 	var myTime = +timepicker5.value;
 
-	if (myDateUpdate < date) {
-		debugger;
+	var myDateUpdate = new Date(myDate);
+	var myTimeUpdate = date.getTime();
+
+	if (myDateUpdate < date || !myDateUpdate == date) {
 		console.error('false');
 
 		// console.info(myDate);
-		var myDateUpdate = new Date(myDate);
-		var myTimeUpdate = date.getTime();
-		// console.info(myTimeUpdate);
+
 		// console.info(+myDateUpdate);
 		checkValid === false;
 		dueDate.style.border = '1px solid #dc3545';

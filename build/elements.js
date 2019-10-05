@@ -57,7 +57,7 @@ function generate() {
 		div.append(butX);
 
 		const butC = document.createElement('button');
-		butC.innerHTML = '<i class="fas fa-clipboard-check"></i>';
+		butC.innerHTML = '<i class="far fa-check-circle"></i>';
 		butC.addEventListener('click', function() {
 			completeTask(returnedArray[i].id);
 		});

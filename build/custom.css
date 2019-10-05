@@ -3,6 +3,9 @@ body {
 	font-size: 125%;
 	font-family: "Roboto", arial, sans-serif;
 }
+.space {
+	height: 25px;
+}
 
 .jumbotron h1 {
 	font-size: 25px;
@@ -16,10 +19,6 @@ body {
 	margin-bottom: 1.4em;
 }
 
-.space {
-	height: 25px;
-}
-
 #stage {
 	padding-right: 3px;
 	padding-left: 3px;
@@ -29,13 +28,10 @@ body {
 
 #stage .card {
 	overflow: auto;
-	/* max-width: 18rem; */
 	min-height: 300px;
 	background: #ffffff42;
 	background: url(images/notebg.png) 5% -5px;
-
 	background-repeat: no-repeat;
-	/* background-size: 73.5%; */
 	background-position: 50%;
 }
 
@@ -56,10 +52,6 @@ body {
 	font-size: 0.8em;
 }
 
-#dueDate {
-	padding: 0 5px;
-}
-
 .topArea .jumbotron,
 .topArea .card-header {
 	background-color: rgba(248, 249, 131, 0.73);
@@ -73,19 +65,12 @@ body {
 
 .far.fa-trash-alt {
 	float: right;
-
 	margin: 5px;
-
 	opacity: 0.5;
-
 	position: absolute;
-
 	top: 45px;
-
 	right: 60px;
-
 	font-size: 0.7em;
-
 	color: #f00;
 }
 
@@ -95,11 +80,8 @@ body {
 
 #stage .card-header {
 	padding: 10px 35px 0;
-
 	line-height: 2em;
-
 	margin: 45px 0 0 0;
-
 	font-size: 0.9em;
 }
 
@@ -112,6 +94,7 @@ body {
 .far {
 	margin-right: 5px;
 }
+
 .Complete {
 	padding: 0;
 	background-color: transparent;
@@ -123,19 +106,25 @@ body {
 	line-height: 1;
 	color: #000;
 	text-shadow: 0 1px 0 #fff;
-	opacity: .5;
 	width: 80px;
 	position: absolute;
-	right: 53px;
-	top: 49px;
+	right: 55px;
+	top: 50px;
 }
+
 button:focus {
 	outline: initial;
 }
-.fas.fa-clipboard-check {
+
+.far.fa-check-circle {
 	color: #28a745;
 	width: 0;
 	margin-right: 10px;
+	opacity: .5;
+	cursor: pointer;
+}
+.far.fa-check-circle:hover {
+	opacity: 1;
 }
 button.close {
 	z-index: 5;
