@@ -26,6 +26,8 @@ const completed = document.getElementById('completed');
 const incomplete = document.getElementById('incomplete');
 const all = document.getElementById('all');
 
+var today = new Date();
+var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
 //set the default date input
 // Date.now()
 // let date = new Date();
@@ -41,6 +43,7 @@ function generate() {
 
 	for (let i = 0; i < returnedArray.length; i++) {
 		const div = document.createElement('div');
+
 		stage.append(div);
 		div.className = 'card mb-3 col-3';
 		div.id = 'note' + returnedArray[i].id;

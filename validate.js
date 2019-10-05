@@ -13,7 +13,7 @@ function clear() {
 }
 
 function validate() {
-	if (!taskName.value || !taskDetail.value) {
+	if (!taskName.value || !taskDetail.value || !dueDate.value) {
 		creator.classList.add('was-validated');
 		messageBoard.innerText = 'Please Fill All Inputs';
 		messageBoard.style.color = '#dc3545';
@@ -33,16 +33,15 @@ function checkTimeForValid() {
 	var myDate = dueDate.value;
 	var myTime = +timepicker5.value;
 
-	if (myTime > myTimeUpdate) {
-		console.error('false');
-	}
-
-	// console.info(myDate);
-	var myDateUpdate = new Date(myDate);
-	var myTimeUpdate = date.getTime();
-	// console.info(myTimeUpdate);
-	// console.info(+myDateUpdate);
 	if (myDateUpdate < date) {
+		debugger;
+		console.error('false');
+
+		// console.info(myDate);
+		var myDateUpdate = new Date(myDate);
+		var myTimeUpdate = date.getTime();
+		// console.info(myTimeUpdate);
+		// console.info(+myDateUpdate);
 		checkValid === false;
 		dueDate.style.border = '1px solid #dc3545';
 		messageBoard.innerText = 'please choose a future date';
@@ -56,3 +55,4 @@ function checkTimeForValid() {
 		console.info('true');
 	}
 }
+// if  (myTime > myTimeUpdate) {}

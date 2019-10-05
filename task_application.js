@@ -60,5 +60,7 @@ function draw() {
 	}
 	// timeValid()
 	buildTask();
-	generate();
+	setTimeout(() => {
+		generate();
+	}, 500);
 }
