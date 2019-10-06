@@ -60,14 +60,6 @@ function generate() {
 		// butX.id = ("but" + returnedArray[i].id)
 		div.append(butX);
 
-		const butC = document.createElement('button');
-		butC.innerHTML = '<i class="far fa-check-circle"></i>';
-		butC.addEventListener('click', function () {
-			completeTask(returnedArray[i].id);
-		});
-		butC.className = 'Complete';
-		div.append(butC);
-
 		const div2 = document.createElement('div');
 		div.append(div2);
 		div2.className = 'card-header';

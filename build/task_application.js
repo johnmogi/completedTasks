@@ -8,17 +8,6 @@ function deleteTask(id) {
 	//   deleteCard();
 }
 
-function completeTask(id) {
-	const compBut = document.getElementById('note' + id);
-	compBut.style.opacity = '0.5';
-	let obj = returnedArray.find(obj => obj.id == id);
-	obj.status = "complete"
-	const objId = document.getElementById("note" + id);
-	objId.classList.add("completed");
-	// console.log(obj);
-}
-
-
 
 
 function buildTask() {
