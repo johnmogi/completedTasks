@@ -27,24 +27,17 @@ function validate() {
 	checkTimeForValid();
 }
 
-
-
 function checkTimeForValid() {
 	let date = new Date();
 	console.info(+date);
 	var myDate = dueDate.value;
 	var myTime = +timepicker5.value;
-
-
 	var myDateUpdate = new Date(myDate);
 	console.info(+myDateUpdate);
 	var myTimeUpdate = date.getTime();
 
 	if (myDateUpdate < date || !myDateUpdate == date) {
-		console.error('false');
-
-		// console.info(myDate);
-
+		// console.error('false');
 		// console.info(+myDateUpdate);
 		checkValid === false;
 		dueDate.style.border = '1px solid #dc3545';
@@ -54,9 +47,9 @@ function checkTimeForValid() {
 		console.info('false');
 		if (today2 == dueDate.value) {
 			checkValid === true;
-			dueDate.style.border = '1px solid #dc3545';
+			dueDate.style.border = '1px solid #bee5eb';
 			messageBoard.innerText = 'A task for today? a bit risky but go ahead...';
-			messageBoard.style.color = '#dc3545';
+			messageBoard.style.color = '#004085';
 		}
 	} else {
 		checkValid === true;
@@ -65,4 +58,3 @@ function checkTimeForValid() {
 		console.info('true');
 	}
 }
-// if  (myTime > myTimeUpdate) {}

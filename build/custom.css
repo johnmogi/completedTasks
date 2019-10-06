@@ -3,6 +3,7 @@ body {
 	font-size: 125%;
 	font-family: "Roboto", arial, sans-serif;
 }
+
 .space {
 	height: 25px;
 }
@@ -91,6 +92,7 @@ body {
 	font-size: 0.8em;
 	text-align: left;
 }
+
 .far {
 	margin-right: 5px;
 }
@@ -112,6 +114,10 @@ body {
 	top: 50px;
 }
 
+.completed {
+	opacity: .5;
+}
+
 button:focus {
 	outline: initial;
 }
@@ -123,9 +129,25 @@ button:focus {
 	opacity: .5;
 	cursor: pointer;
 }
+
 .far.fa-check-circle:hover {
 	opacity: 1;
 }
+
 button.close {
 	z-index: 5;
+}
+
+/* MQ */
+@media screen and (max-width: 767px) {
+
+	.col-8,
+	.col-4 {
+		width: 100%;
+		display: block;
+		clear: both;
+		flex: 100%;
+		max-width: 100%;
+		margin: 10px 0;
+	}
 }

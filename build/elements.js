@@ -2,9 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	const butonSub = document.getElementById('butonSub');
 	const creator = document.getElementById('creator');
 	butonSub.addEventListener('click', draw);
-	// butonSub.addEventListener("click", timeValid2)
 	butonRes.addEventListener('click', clear);
 	window.addEventListener('load', redraw);
+
+
+
 
 	const buttonClose = document.getElementsByClassName('close');
 	const messageBoard = document.getElementById('messageBoard');
@@ -20,9 +22,7 @@ let TASK_DOM = {};
 const delBut = document.getElementsByClassName('close');
 const taskArray = [];
 const returnedArray = [];
-const completed = document.getElementById('completed');
-const incomplete = document.getElementById('incomplete');
-const all = document.getElementById('all');
+
 
 
 //TIME
