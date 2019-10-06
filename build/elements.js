@@ -10,12 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	const messageBoard = document.getElementById('messageBoard');
 	const vaildBypass = document.getElementById('vaildBypass');
 
-	// const dueDate = document.getElementById("dueDate")
-	// let datenow = dueDate.split("-")
-	// let yearFromInput = parseInt(datenow[0])
-	// let dayFromInput = parseInt(datenow[2])
-	// let monthFromInput = parseInt(datenow[1])
+
+
 });
+
 
 let TASK_DOM = {};
 
@@ -26,17 +24,23 @@ const completed = document.getElementById('completed');
 const incomplete = document.getElementById('incomplete');
 const all = document.getElementById('all');
 
+
+//TIME
 var today = new Date();
 var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+new Date().getTime() // = time in ms
+
 //set the default date input
-// Date.now()
-// let date = new Date();
-// let day = date.getDate();
-// let month = date.getMonth() + 1;
-// let year = date.getFullYear();
-// if (month < 10) month = "0" + month;
-// if (day < 10) day = "0" + day;
-// let today = year + "-" + month + "-" + day;
+Date.now()
+let date = new Date();
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+if (month < 10) month = "0" + month;
+if (day < 10) day = "0" + day;
+let today2 = year + "-" + month + "-" + day;
+
+
 
 function generate() {
 	stage.innerHTML = '';
@@ -49,7 +53,7 @@ function generate() {
 		div.id = 'note' + returnedArray[i].id;
 		const butX = document.createElement('button');
 		butX.innerHTML = '<i class="far fa-trash-alt"></i>';
-		butX.addEventListener('click', function() {
+		butX.addEventListener('click', function () {
 			deleteTask(returnedArray[i].id);
 		});
 		butX.className = 'close';
@@ -58,7 +62,7 @@ function generate() {
 
 		const butC = document.createElement('button');
 		butC.innerHTML = '<i class="far fa-check-circle"></i>';
-		butC.addEventListener('click', function() {
+		butC.addEventListener('click', function () {
 			completeTask(returnedArray[i].id);
 		});
 		butC.className = 'Complete';
